@@ -40,6 +40,7 @@ namespace Team12
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelForm = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -56,16 +57,18 @@ namespace Team12
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(210, 598);
+            this.panel1.Size = new System.Drawing.Size(140, 389);
             this.panel1.TabIndex = 0;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.buttonHome);
-            this.panel5.Location = new System.Drawing.Point(0, 299);
+            this.panel5.Location = new System.Drawing.Point(0, 194);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(208, 62);
+            this.panel5.Size = new System.Drawing.Size(139, 40);
             this.panel5.TabIndex = 5;
             // 
             // buttonHome
@@ -77,9 +80,10 @@ namespace Team12
             this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHome.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.buttonHome.Location = new System.Drawing.Point(-3, 3);
+            this.buttonHome.Location = new System.Drawing.Point(-2, 2);
+            this.buttonHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonHome.Name = "buttonHome";
-            this.buttonHome.Size = new System.Drawing.Size(221, 56);
+            this.buttonHome.Size = new System.Drawing.Size(147, 36);
             this.buttonHome.TabIndex = 4;
             this.buttonHome.Text = "Home";
             this.buttonHome.UseVisualStyleBackColor = true;
@@ -87,17 +91,19 @@ namespace Team12
             // 
             // panel6
             // 
-            this.panel6.Location = new System.Drawing.Point(3, 367);
+            this.panel6.Location = new System.Drawing.Point(2, 239);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(205, 62);
+            this.panel6.Size = new System.Drawing.Size(137, 40);
             this.panel6.TabIndex = 5;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.buttonAboutUs);
-            this.panel4.Location = new System.Drawing.Point(0, 231);
+            this.panel4.Location = new System.Drawing.Point(0, 150);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(210, 62);
+            this.panel4.Size = new System.Drawing.Size(140, 40);
             this.panel4.TabIndex = 4;
             // 
             // buttonAboutUs
@@ -110,9 +116,10 @@ namespace Team12
             this.buttonAboutUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAboutUs.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAboutUs.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.buttonAboutUs.Location = new System.Drawing.Point(-3, 3);
+            this.buttonAboutUs.Location = new System.Drawing.Point(-2, 2);
+            this.buttonAboutUs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonAboutUs.Name = "buttonAboutUs";
-            this.buttonAboutUs.Size = new System.Drawing.Size(213, 56);
+            this.buttonAboutUs.Size = new System.Drawing.Size(142, 36);
             this.buttonAboutUs.TabIndex = 0;
             this.buttonAboutUs.Text = "About us";
             this.buttonAboutUs.UseVisualStyleBackColor = false;
@@ -124,17 +131,19 @@ namespace Team12
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(210, 148);
+            this.panel3.Size = new System.Drawing.Size(140, 96);
             this.panel3.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell Extra Bold", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Location = new System.Drawing.Point(8, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 104);
+            this.label1.Size = new System.Drawing.Size(118, 70);
             this.label1.TabIndex = 0;
             this.label1.Text = "Team\r\n 12";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -145,26 +154,39 @@ namespace Team12
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.panelForm);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(210, 0);
+            this.panel2.Location = new System.Drawing.Point(140, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(729, 148);
+            this.panel2.Size = new System.Drawing.Size(486, 96);
             this.panel2.TabIndex = 1;
             // 
             // panelForm
             // 
-            this.panelForm.Location = new System.Drawing.Point(4, 150);
+            this.panelForm.Location = new System.Drawing.Point(3, 97);
+            this.panelForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(726, 448);
+            this.panelForm.Size = new System.Drawing.Size(484, 291);
             this.panelForm.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(327, 194);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(939, 598);
+            this.ClientSize = new System.Drawing.Size(626, 389);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormMain";
             this.Text = "FormMain";
             this.panel1.ResumeLayout(false);
@@ -189,5 +211,6 @@ namespace Team12
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelForm;
         private System.Windows.Forms.Button buttonHome;
+        private System.Windows.Forms.Button button1;
     }
 }
