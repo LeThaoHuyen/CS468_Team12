@@ -168,6 +168,23 @@ select dbo.fn_count_songs()
 
 Select * from playlists
 
+go
+
+create or alter procedure sp_count_songs1(@result INT out)
+AS
+BEGIN
+	SET @result =
+	(SELECT COUNT(*) FROM Songs)
+END
+GO
+
+-- declare @result INT
+-- exec sp_count_songs @result out
+-- print(@result)
+
+exec sp_count_songs2
+
+
 -- select * from SongsOfPlaylist where playlistID = 1
 -- exec sp_updatePlaylist 1, 3, 1
 
