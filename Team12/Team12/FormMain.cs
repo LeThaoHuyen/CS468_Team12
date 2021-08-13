@@ -15,19 +15,30 @@ namespace Team12
         public FormMain()
         {
             InitializeComponent();
-            activeOptionButton = buttonHome;
         }
-        Form activeForm = null;
-        Button activeOptionButton;
+        
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            activeOptionButton = buttonHome;
+            activeOptionButton.BackColor = Color.Goldenrod;
+            openChildForm(buttonHome, new FormHomepage());
+        }
 
+        Form activeForm = null;
+        Button activeOptionButton = null;
         private void openChildForm(object btsender, Form childForm)
         {
+            
             if (activeOptionButton != (Button) btsender)
             {
-                activeOptionButton.BackColor = SystemColors.ControlDarkDark;
+                activeOptionButton.BackColor = panelLeftMenu.BackColor; // Default background color
                 activeOptionButton = (Button) btsender;
-                activeOptionButton.BackColor = Color.Moccasin;
+                activeOptionButton.BackColor = Color.Goldenrod; // Highlight background color
             }
+
+            
+
+            
 
             if (activeForm != null)
             {
@@ -41,16 +52,20 @@ namespace Team12
             this.panelForm.Controls.Add(childForm);
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Show();
+            labelChildFormName.Text = ((Button)btsender).Text;
+
+
         }
 
-        private void buttonAboutUs_Click(object sender, EventArgs e)
+        private void buttonHome_Click(object sender, EventArgs e)
         {
-            openChildForm(sender, new Form1());
+            openChildForm(sender, new FormHomepage());
         }
 
-        private void buttonHome_Click_1(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            openChildForm(sender, new Form1());
+            openChildForm(sender, new FormAboutUs());
         }
+
     }
 }
