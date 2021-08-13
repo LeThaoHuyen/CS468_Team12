@@ -40,7 +40,6 @@ namespace Team12
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelForm = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -158,21 +157,11 @@ namespace Team12
             this.panelForm.Size = new System.Drawing.Size(726, 448);
             this.panelForm.TabIndex = 2;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(361, 239);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(263, 94);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(939, 598);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
@@ -200,6 +189,5 @@ namespace Team12
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelForm;
         private System.Windows.Forms.Button buttonHome;
-        private System.Windows.Forms.Button button1;
     }
 }
