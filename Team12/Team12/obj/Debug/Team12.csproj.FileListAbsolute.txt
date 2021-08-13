@@ -1,0 +1,10 @@
+D:\CS468_Team12\Team12\Team12\bin\Debug\Team12.exe.config
+D:\CS468_Team12\Team12\Team12\bin\Debug\Team12.exe
+D:\CS468_Team12\Team12\Team12\bin\Debug\Team12.pdb
+D:\CS468_Team12\Team12\Team12\obj\Debug\Team12.csprojAssemblyReference.cache
+D:\CS468_Team12\Team12\Team12\obj\Debug\Team12.FormMain.resources
+D:\CS468_Team12\Team12\Team12\obj\Debug\Team12.Properties.Resources.resources
+D:\CS468_Team12\Team12\Team12\obj\Debug\Team12.csproj.GenerateResource.cache
+D:\CS468_Team12\Team12\Team12\obj\Debug\Team12.csproj.CoreCompileInputs.cache
+D:\CS468_Team12\Team12\Team12\obj\Debug\Team12.exe
+D:\CS468_Team12\Team12\Team12\obj\Debug\Team12.pdb
