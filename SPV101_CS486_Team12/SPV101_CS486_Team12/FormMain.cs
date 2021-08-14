@@ -82,5 +82,12 @@ namespace Team12
 
             openChildForm(sender, new FormPremain());
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            labelChildFormName.Text = "Dual Round - Trial";
+
+            openChildForm(sender, new FormTrial());
+        }
     }
 }
