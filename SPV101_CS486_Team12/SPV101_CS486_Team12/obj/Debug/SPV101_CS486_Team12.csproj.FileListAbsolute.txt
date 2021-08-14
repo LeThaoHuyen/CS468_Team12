@@ -1,5 +1,4 @@
 C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\SPV101_CS486_Team12.csprojAssemblyReference.cache
-C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\Team12.Form2.resources
 C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\Team12.FormAboutUs.resources
 C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\Team12.FormDualRoundIntroduction.resources
 C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\Team12.FormHomepage.resources

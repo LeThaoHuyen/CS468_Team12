@@ -53,11 +53,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="FormCurrentResult.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="FormCurrentResult.Designer.cs">
+      <DependentUpon>FormCurrentResult.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTrial.cs">
       <SubType>Form</SubType>
@@ -109,10 +109,6 @@
     <Compile Include="Storage.Designer.cs">
       <DependentUpon>Storage.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormTrial.resx">
       <DependentUpon>FormTrial.cs</DependentUpon>
     </EmbeddedResource>
