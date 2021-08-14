@@ -51,10 +51,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Goldenrod;
-            this.button1.Location = new System.Drawing.Point(109, 117);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(73, 76);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 62);
+            this.button1.Size = new System.Drawing.Size(75, 40);
             this.button1.TabIndex = 8;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -66,10 +65,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(315, 132);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(210, 86);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 62);
+            this.button2.Size = new System.Drawing.Size(75, 40);
             this.button2.TabIndex = 9;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = false;
@@ -79,10 +77,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(208, 369);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(139, 240);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 23);
+            this.label1.Size = new System.Drawing.Size(84, 17);
             this.label1.TabIndex = 11;
             this.label1.Text = "Normal text";
             // 
@@ -91,10 +88,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label2.Location = new System.Drawing.Point(204, 302);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(136, 196);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(293, 50);
+            this.label2.Size = new System.Drawing.Size(194, 33);
             this.label2.TabIndex = 12;
             this.label2.Text = "Some header";
             // 
@@ -106,14 +102,13 @@
             this.comboBox1.ForeColor = System.Drawing.Color.White;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.IntegralHeight = false;
-            this.comboBox1.ItemHeight = 23;
+            this.comboBox1.ItemHeight = 17;
             this.comboBox1.Items.AddRange(new object[] {
             "one two three",
             "i love ice cream"});
-            this.comboBox1.Location = new System.Drawing.Point(177, 462);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox1.Location = new System.Drawing.Point(118, 300);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(824, 31);
+            this.comboBox1.Size = new System.Drawing.Size(551, 25);
             this.comboBox1.TabIndex = 13;
             // 
             // dataGridViewIntroduction
@@ -156,8 +151,7 @@
             this.dataGridViewIntroduction.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewIntroduction.EnableHeadersVisualStyles = false;
             this.dataGridViewIntroduction.GridColor = System.Drawing.Color.Beige;
-            this.dataGridViewIntroduction.Location = new System.Drawing.Point(652, 69);
-            this.dataGridViewIntroduction.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridViewIntroduction.Location = new System.Drawing.Point(435, 45);
             this.dataGridViewIntroduction.Name = "dataGridViewIntroduction";
             this.dataGridViewIntroduction.ReadOnly = true;
             this.dataGridViewIntroduction.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -175,7 +169,7 @@
             this.dataGridViewIntroduction.ShowCellToolTips = false;
             this.dataGridViewIntroduction.ShowEditingIcon = false;
             this.dataGridViewIntroduction.ShowRowErrors = false;
-            this.dataGridViewIntroduction.Size = new System.Drawing.Size(488, 298);
+            this.dataGridViewIntroduction.Size = new System.Drawing.Size(325, 194);
             this.dataGridViewIntroduction.TabIndex = 14;
             // 
             // Column1
@@ -191,24 +185,24 @@
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(36)))), ((int)(((byte)(44)))));
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(177, 533);
+            this.textBox1.Location = new System.Drawing.Point(118, 346);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(691, 32);
+            this.textBox1.Size = new System.Drawing.Size(462, 24);
             this.textBox1.TabIndex = 15;
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Goldenrod;
+            this.button3.BackColor = System.Drawing.Color.GreenYellow;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(472, 132);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Location = new System.Drawing.Point(285, 98);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(112, 62);
+            this.button3.Size = new System.Drawing.Size(105, 28);
             this.button3.TabIndex = 16;
-            this.button3.Text = "button3";
+            this.button3.Text = "Add song";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button4
@@ -219,19 +213,18 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(875, 531);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button4.Location = new System.Drawing.Point(583, 345);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(33, 32);
+            this.button4.Size = new System.Drawing.Size(22, 21);
             this.button4.TabIndex = 17;
             this.button4.UseVisualStyleBackColor = false;
             // 
             // Storage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(36)))), ((int)(((byte)(44)))));
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox1);
@@ -241,7 +234,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Storage";
             this.Text = "Storage";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewIntroduction)).EndInit();
