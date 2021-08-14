@@ -1,0 +1,17 @@
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\SPV101_CS486_Team12.csprojAssemblyReference.cache
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\Team12.Form2.resources
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\Team12.FormAboutUs.resources
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\Team12.FormDualRoundIntroduction.resources
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\Team12.FormHomepage.resources
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\Team12.FormMain.resources
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\Team12.FormPremain.resources
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\Team12.Properties.Resources.resources
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\Team12.Storage.resources
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\SPV101_CS486_Team12.csproj.GenerateResource.cache
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\SPV101_CS486_Team12.csproj.CoreCompileInputs.cache
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\Team12.exe
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\Team12.pdb
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\bin\Debug\Team12.exe.config
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\bin\Debug\Team12.exe
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\bin\Debug\Team12.pdb
+C:\Users\Sandra\Documents\GitHub\CS468_Team12\SPV101_CS486_Team12\SPV101_CS486_Team12\obj\Debug\Team12.FormChoosePlaylist.resources

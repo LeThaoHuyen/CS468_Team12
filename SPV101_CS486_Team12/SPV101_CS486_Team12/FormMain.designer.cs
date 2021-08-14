@@ -31,16 +31,18 @@ namespace Team12
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelLeftMenu = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.buttonHome = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.buttonAboutUs = new System.Windows.Forms.Button();
+            this.buttonHome = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.labelChildFormName = new System.Windows.Forms.Label();
             this.panelForm = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.labelChildFormName = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.panelLeftMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -49,7 +51,9 @@ namespace Team12
             // panelLeftMenu
             // 
             this.panelLeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(45)))), ((int)(((byte)(54)))));
+            this.panelLeftMenu.Controls.Add(this.button3);
             this.panelLeftMenu.Controls.Add(this.button2);
+            this.panelLeftMenu.Controls.Add(this.button1);
             this.panelLeftMenu.Controls.Add(this.buttonAboutUs);
             this.panelLeftMenu.Controls.Add(this.buttonHome);
             this.panelLeftMenu.Controls.Add(this.panel2);
@@ -59,72 +63,23 @@ namespace Team12
             this.panelLeftMenu.Size = new System.Drawing.Size(200, 711);
             this.panelLeftMenu.TabIndex = 5;
             // 
-            // label2
+            // button1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(122, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 37);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "12";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 131);
-            this.panel2.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(29, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 39);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Team";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(57, 76);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 16);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "CS486 - Final";
-            // 
-            // buttonHome
-            // 
-            this.buttonHome.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonHome.FlatAppearance.BorderSize = 0;
-            this.buttonHome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHome.ForeColor = System.Drawing.Color.White;
-            this.buttonHome.Image = ((System.Drawing.Image)(resources.GetObject("buttonHome.Image")));
-            this.buttonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonHome.Location = new System.Drawing.Point(0, 131);
-            this.buttonHome.Name = "buttonHome";
-            this.buttonHome.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.buttonHome.Size = new System.Drawing.Size(200, 60);
-            this.buttonHome.TabIndex = 8;
-            this.buttonHome.Text = "     Home";
-            this.buttonHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonHome.UseVisualStyleBackColor = true;
-            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 251);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 60);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Duet round - Introduction";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // buttonAboutUs
             // 
@@ -147,6 +102,73 @@ namespace Team12
             this.buttonAboutUs.UseVisualStyleBackColor = true;
             this.buttonAboutUs.Click += new System.EventHandler(this.button1_Click);
             // 
+            // buttonHome
+            // 
+            this.buttonHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonHome.FlatAppearance.BorderSize = 0;
+            this.buttonHome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHome.ForeColor = System.Drawing.Color.White;
+            this.buttonHome.Image = ((System.Drawing.Image)(resources.GetObject("buttonHome.Image")));
+            this.buttonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonHome.Location = new System.Drawing.Point(0, 131);
+            this.buttonHome.Name = "buttonHome";
+            this.buttonHome.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonHome.Size = new System.Drawing.Size(200, 60);
+            this.buttonHome.TabIndex = 8;
+            this.buttonHome.Text = "     Home";
+            this.buttonHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonHome.UseVisualStyleBackColor = true;
+            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 131);
+            this.panel2.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Goldenrod;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Location = new System.Drawing.Point(122, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 37);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "12";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(57, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 16);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "CS486 - Final";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(29, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 39);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Team";
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.labelChildFormName);
@@ -155,6 +177,17 @@ namespace Team12
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(784, 76);
             this.panel3.TabIndex = 6;
+            // 
+            // labelChildFormName
+            // 
+            this.labelChildFormName.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChildFormName.ForeColor = System.Drawing.Color.Goldenrod;
+            this.labelChildFormName.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelChildFormName.Location = new System.Drawing.Point(-21, 20);
+            this.labelChildFormName.Name = "labelChildFormName";
+            this.labelChildFormName.Size = new System.Drawing.Size(698, 33);
+            this.labelChildFormName.TabIndex = 13;
+            this.labelChildFormName.Text = "Some header";
             // 
             // panelForm
             // 
@@ -170,29 +203,34 @@ namespace Team12
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 251);
+            this.button2.Location = new System.Drawing.Point(0, 311);
             this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
             this.button2.Size = new System.Drawing.Size(200, 60);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "     Button3";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.TabIndex = 11;
+            this.button2.Text = "Duet round - Trial";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // labelChildFormName
+            // button3
             // 
-            this.labelChildFormName.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelChildFormName.ForeColor = System.Drawing.Color.Goldenrod;
-            this.labelChildFormName.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labelChildFormName.Location = new System.Drawing.Point(-21, 20);
-            this.labelChildFormName.Name = "labelChildFormName";
-            this.labelChildFormName.Size = new System.Drawing.Size(698, 33);
-            this.labelChildFormName.TabIndex = 13;
-            this.labelChildFormName.Text = "Some header";
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 371);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(200, 60);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "Duet round - Premain";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // FormMain
             // 
@@ -229,7 +267,9 @@ namespace Team12
         private System.Windows.Forms.Button buttonAboutUs;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panelForm;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label labelChildFormName;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
     }
 }

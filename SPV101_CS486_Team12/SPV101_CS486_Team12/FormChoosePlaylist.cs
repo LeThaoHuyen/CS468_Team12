@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Team12
 {
-    public partial class FormTrial : Form
+    public partial class FormChoosePlaylist : Form
     {
-        public FormTrial()
+        public FormChoosePlaylist()
         {
             InitializeComponent();
         }

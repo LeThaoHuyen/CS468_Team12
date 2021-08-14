@@ -52,20 +52,35 @@ namespace Team12
             this.panelForm.Controls.Add(childForm);
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Show();
-            labelChildFormName.Text = ((Button)btsender).Text;
 
 
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
+            labelChildFormName.Text = "Home";
             openChildForm(sender, new FormHomepage());
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            labelChildFormName.Text = "About us";
+
             openChildForm(sender, new FormAboutUs());
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            labelChildFormName.Text = "Dual Round - Introduction";
+
+            openChildForm(sender, new FormDualRoundIntroduction());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            labelChildFormName.Text = "Dual Round - Premain";
+
+            openChildForm(sender, new FormPremain());
+        }
     }
 }
