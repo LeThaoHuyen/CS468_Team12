@@ -20,3 +20,7 @@ C:\Users\Sandra\Documents\GitHub\CS468_Team12\Team12\Team12\bin\Debug\Team12.exe
 C:\Users\Sandra\Documents\GitHub\CS468_Team12\Team12\Team12\bin\Debug\Team12.pdb
 C:\Users\Sandra\Documents\GitHub\CS468_Team12\Team12\Team12\obj\Debug\Team12.FormAboutUs.resources
 C:\Users\Sandra\Documents\GitHub\CS468_Team12\Team12\Team12\obj\Debug\Team12.FormHomepage.resources
+D:\CS468_Team12\Team12\Team12\obj\Debug\Team12.csprojAssemblyReference.cache
+D:\CS468_Team12\Team12\Team12\obj\Debug\Team12.FormAboutUs.resources
+D:\CS468_Team12\Team12\Team12\obj\Debug\Team12.FormHomepage.resources
+D:\CS468_Team12\Team12\Team12\obj\Debug\Team12.Storage.resources
