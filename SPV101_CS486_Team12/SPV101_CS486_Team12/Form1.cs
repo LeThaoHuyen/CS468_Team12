@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SPV101_CS486_Team12
+namespace Team12
 {
     public partial class Form1 : Form
     {

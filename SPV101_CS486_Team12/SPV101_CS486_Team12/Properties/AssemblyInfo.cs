@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SPV101_CS486_Team12")]
+[assembly: AssemblyTitle("Team12")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SPV101_CS486_Team12")]
+[assembly: AssemblyProduct("Team12")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("504e4b3c-79f9-445d-a139-74d8272c23e9")]
+[assembly: Guid("064ecbc2-6078-4bcc-8594-6091f3a9db25")]
 
 // Version information for an assembly consists of the following four values:
 //

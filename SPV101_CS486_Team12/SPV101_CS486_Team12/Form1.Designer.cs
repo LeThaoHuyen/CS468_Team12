@@ -1,5 +1,5 @@
 ﻿
-namespace SPV101_CS486_Team12
+namespace Team12
 {
     partial class Form1
     {
