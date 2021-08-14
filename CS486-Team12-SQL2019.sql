@@ -92,6 +92,8 @@ INSERT INTO Singers (singerID ,name,principles) VALUES
 (35, 'Zheng Yunlong',0),
 (36, ' Ayanga', 1);
 
+
+
 insert into songs(songID, songName) VALUES
 (1, 'I Dreamed a Dream'),
 (2, 'A Poets Journey'),
@@ -108,7 +110,25 @@ insert into songs(songID, songName) VALUES
 (13, 'Libiamo Ne Lieti Calici'),
 (14, 'Toreador Song'),
 (15, 'My Homeland');
+
+insert into SingerPairSongsPreMain(singer1ID, singer2ID, songID, result) values
+(1, 2, 1, 1), 
+(3, 4, 2, 1),
+(5, 6, 3, 1),
+(7, 8, 4, 0),
+(9, 10, 5, 0),
+(11, 13, 6, 0),
+(14, 15, 7, 0),
+(16, 17, 8, 0),
+(18, 19, 9, 0),
+(20, 21, 10, 0),
+(22, 23,11, 0),
+(24, 26, 12, 0),
+(28, 29, 13, 0),
+(30, 31, 14, 0),
+(33, 35, 15, 0);
 go
+
 
 --select pricipal
 CREATE OR ALTER procedure sp_selectprincipal
@@ -121,11 +141,11 @@ GO
 
 --exec sp_selectprincipal
 
---Randomly select 6 singers from the reserved team
+--Randomly select 1 singers from the reserved team
 create or alter procedure sp_selectRandomReserved
 as
 BEGIN
-	SELECT TOP 6 * FROM Singers s
+	SELECT TOP 1 * FROM Singers s
 	WHERE s.principles=0
 	order by NEWID()
 END
@@ -317,6 +337,8 @@ begin CATCH
 end catch
 go
 
+
+
 --exec dbo.sp_inserttrial 'abc', 'xyz', 'That Man', 0
 
 --exec dbo.sp_inserttrial 'Jin Shengquan', 'Zhai Lishuotian', 'That Man', 0
@@ -344,24 +366,15 @@ begin
 end
 go
 
-exec sp_updatePrinciplesAfterTrial
-select * from Singers
-select * from Songs
-select * from SingerPairSongsTrial
-insert into SingerPairSongsTrial (singer1id, singer2ID, songID, result) values
-(1, 2, 1, 1),
-(3, 4, 1, 0);
-go
-
-create or alter procedure sp_viewMainResullt
+create or alter procedure sp_viewTop6Trial
 as
 BEGIN
-	(SELECT SPST.singer1ID, SPST.singer2ID, S.songName
-		FROM SingerPairSongsTrial SPST INNER JOIN Songs S ON SPST.songID=S.songID
+	(SELECT S.name
+		FROM SingerPairSongsTrial SPST INNER JOIN Singers S ON SPST.singer1ID=S.singerID
 		WHERE SPST.result=1)
 	UNION
-	(SELECT SPST.singer1ID, SPST.singer2ID, S.songName
-		FROM SingerPairSongsPreMain SPST INNER JOIN Songs S ON SPST.songID=S.songID
+	(SELECT S.name
+		FROM SingerPairSongsTrial SPST INNER JOIN Singers S ON SPST.singer2ID=S.singerID
 		WHERE SPST.result=1);
 end
 go
@@ -369,11 +382,9 @@ go
 create or alter procedure sp_viewMembersTwoGroups
 as
 BEGIN
-	begin TRANSACTION
 	SELECT S.name as PrincipleList FROM Singers S WHERE principles=1;
 	
 	SELECT S.name as ReservedList FROM Singers S WHERE principles=0;
-	commit transaction
 end
 go
 
@@ -400,56 +411,24 @@ begin CATCH
 	throw;
 end catch
 go
--- exec sp_updateSingerPrinciples 1, 0
 
--- CREATE OR ALTER PROCEDURE sp_updatePlaylist(@playlistid INT, @songid INT, @favorites BIT)
--- AS
--- BEGIN TRY
--- 	BEGIN TRANSACTION
--- 		if not exists(
--- 			select *
--- 			from playlists
--- 			where playlistID = @playlistid
--- 		)
--- 		BEGIN
--- 			--RAISERROR('There is no such playlistid', 16, 1);
--- 			-- ROLLBACK;
--- 			THROW 50001,'There is no such playlistid', 1;
--- 		END
+create or alter PROCEDURE sp_singerPair
+as 
+begin 
+	select distinct singer1ID, singer2ID, so.songName
+	from SingerPairSongsPreMain as spsp
+	join Singers as s on (spsp.singer1ID = s.singerID or spsp.singer2ID = s.singerID)
+	join Songs as so on spsp.songID = so.songID
+end
+go
 
--- 		if not exists(
--- 			select *
--- 			from songs
--- 			where songID = @songid
--- 		)
--- 		BEGIN
--- 			--RAISERROR('There is no such songid', 16, 1);
--- 			-- ROLLBACK;
--- 			THROW 50002,'There is no such songid', 1;
--- 		END
+create or alter procedure sp_selectReserved
+as
+BEGIN
+	SELECT s.name FROM Singers s
+	WHERE s.principles=0
+END
+GO
 
--- 		if exists(
--- 			select *
--- 			from SongsOfPlaylist
--- 			where songID = @songid and playlistID = @playlistid
--- 		)
--- 		BEGIN
--- 			--RAISERROR('Song is already in playlist', 16, 1);
--- 			-- ROLLBACK;
--- 			THROW 50003,'Song is already in playlist', 1;
--- 		END
-
--- 		insert into SongsOfPlaylist(playlistID, songID, Favorites)
--- 		values (@playlistid, @songid, @favorites);
--- 	COMMIT TRANSACTION
--- 	RETURN 1;
--- END TRY
--- BEGIN CATCH
--- 	ROLLBACK;
--- 	THROW
--- END CATCH
--- GO
-
--- EXEC sp_select3SongsRandomly
 -- USE MASTER
 -- DROP DATABASE CS486_Team12_DB
