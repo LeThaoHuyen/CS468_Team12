@@ -14,6 +14,11 @@ Create table Songs
 	streamCount INT,
 );
 
+CREATE table Samble
+(
+	ID int primary key
+)
+
 CREATE TABLE SingerSongs
 (
 	singerID int, 
@@ -178,11 +183,9 @@ BEGIN
 END
 GO
 
--- declare @result INT
--- exec sp_count_songs @result out
--- print(@result)
-
-exec sp_count_songs2
+declare @result INT
+exec sp_count_songs1 @result out
+print(@result)
 
 
 -- select * from SongsOfPlaylist where playlistID = 1
