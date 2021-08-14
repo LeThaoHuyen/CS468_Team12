@@ -18,7 +18,7 @@ CREATE TABLE Songs
 );
 
 CREATE TABLE SingerPairSongsTrial
-(	singer1ID int, --fk
+(	singer1ID int, --fk 
 	singer2ID int, --fk
 	songID int, --fk
 	result BIT check(result  = 0 OR result = 1) --0: lose; 1: win
@@ -34,7 +34,6 @@ CREATE TABLE SingerPairSongsPreMain
 	primary key(singer1ID,singer2ID)
 );
 GO
-
 
 ALTER TABLE SingerPairSongsTrial ADD
 CONSTRAINT FK_SingerPairSongsTrial_singer1ID FOREIGN KEY(singer1ID) REFERENCES Singers(singerID);
@@ -205,5 +204,29 @@ go
 
 -- -- delete from SongsOfPlaylist where songid = 3
 
+--select pricipal
+CREATE OR ALTER procedure sp_selectprincipal
+AS
+BEGIN
+    select * from Singers s
+	where s.principles=1
+END
+GO
+
+--exec sp_selectprincipal
+
+--Randomly select 6 singers from the reserved team
+create or alter procedure sp_selectRandomReserved
+as
+BEGIN
+	SELECT TOP 6 * FROM Singers s
+	WHERE s.principles=0
+	order by NEWID()
+END
+GO
+
+-- exec sp_selectRandomReserved
+
 -- USE MASTER
 -- DROP DATABASE CS486_Team12_DB
+
