@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+
 
 namespace Team12
 {
@@ -17,8 +19,10 @@ namespace Team12
         {
             InitializeComponent();
 
-            string sConnectionString = @"Data Source=DESKTOP-41U2CBJ\SQLEXPRESS;Initial Catalog=CS486_Team12_DB;Integrated Security=True";
 
+
+            //string sConnectionString = @"Data Source=DESKTOP-41U2CBJ\SQLEXPRESS;Initial Catalog=CS486_Team12_DB;Integrated Security=True";
+            string sConnectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString.ToString();
             SqlConnection cnn = new SqlConnection();
             cnn.ConnectionString = sConnectionString;
             cnn.Open();

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 
 using System.Drawing;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace Team12
         {
             InitializeComponent();
 
-            string sConnectionString = @"Data Source=DESKTOP-41U2CBJ\SQLEXPRESS;Initial Catalog=CS486_Team12_DB;Integrated Security=True";
+            string sConnectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString.ToString(); 
 
             SqlConnection cnn = new SqlConnection();
             cnn.ConnectionString = sConnectionString;
